@@ -4,7 +4,8 @@ import Footbar from '../components/footer/index';
 import { Card, CardBody, CardTitle, CardText, Row, Col } from 'reactstrap';
 import logoHome from '../assets/images/home.png'    
 import logoMedical from '../assets/images/medical.png';    
-import logoTransport from '../assets/images/transport.png';    
+import logoTransport from '../assets/images/transport.png';
+import { NavLink } from 'react-router-dom';    
 
 
 export function CategoryObject(){
@@ -24,7 +25,7 @@ export function CategoryObject(){
 
                     <Row>
                         <Col xs="4">
-                                <Card body style={{borderWidth: '3px', backgroundColor: '#d1e2ff', margin: '20px'}} >
+                        <NavLink to="/objectshow"><Card body style={{borderWidth: '3px', backgroundColor: '#d1e2ff', margin: '20px'}} >
                                     <center>
                                         <br/><br/>                                       
                                         <CardTitle style={{fontWeight: "bold", fontSize: "30px"}}><center>Domotique</center></CardTitle>
@@ -36,9 +37,10 @@ export function CategoryObject(){
 
                                     </center>
                                 </Card>
+                                </NavLink>
                         </Col>
                         <Col xs="4">
-                        <Card body style={{borderWidth: '3px', backgroundColor: '#d1e2ff', margin: '20px'}}>
+                        <NavLink to="/objectshow"><Card body style={{borderWidth: '3px', backgroundColor: '#d1e2ff', margin: '20px'}}>
                                 <center>
                                      <br/><br/>                                       
                                     <CardTitle style={{fontWeight: "bold", fontSize: "30px"}}><center>Médical</center></CardTitle>
@@ -50,9 +52,10 @@ export function CategoryObject(){
                                 </center>
                         
                             </Card>
+                            </NavLink>
                         </Col>
                         <Col xs="4">
-                        <Card body style={{borderWidth: '3px', backgroundColor: '#d1e2ff', margin: '20px'}}>
+                        <NavLink to="/objectshow"><Card body style={{borderWidth: '3px', backgroundColor: '#d1e2ff', margin: '20px'}}>
                                 <center>
                                     <br/><br/>
                                     <CardTitle style={{fontWeight: "bold", fontSize: "30px"}}><center>Transport</center></CardTitle>
@@ -62,7 +65,7 @@ export function CategoryObject(){
                                     <CardText>Contient tous les objets connectés que l'on peut retrouver pour le transport</CardText>
                                     <br/><br/>
                                 </center>
-                            </Card>
+                            </Card></NavLink>
                         </Col>
                     </Row>
                     
