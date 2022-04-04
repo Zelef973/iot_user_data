@@ -22,21 +22,24 @@ export function Home() {
       <Headers />
       <Card>
         <CardBody className="text-justify">
-          <CardTitle tag="h5">
-            I - Présentation général du projet
+          <CardTitle tag="h5" style={{margin:'10px'}}>
+            <strong>I - Présentation général du projet</strong>
           </CardTitle>
-          <CardText>
-            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </CardText>
+          <CardText style={{margin:'20px'}}>
+          Durant ce cours de sécurité IoT, nous devons réaliser un projet parmi 3 possibles. Nous avons donc choisi le projet 3 qui s’intitule : «Un système de visualisation de la collecte et du traitement de renseignements personnels». <br/><br/>
+Nous avons décidé de traiter ce sujet car nous avons pu voir lors des séances théoriques mais aussi des lectures, que la protection des données est un des enjeux les plus importants pour le domaine de l’IoT.  En effet, de nombreux objets connectés subissent des pertes ou vol de données, et les utilisateurs ont du mal à voir concrètement quelles données sont collectées par l’objet mais aussi la circulation de ces données. Il est donc très intéressant de créer un système qui permettrait de visualiser la collecte et le traitement de ces données afin que les utilisateurs soient sensibilisés sur ce point crucial de l’internet des objets. <br/><br/>
+L'objectif principal du système sera donc d’éduquer et de sensibiliser les utilisateurs de ces objets connectés, aux enjeux liés à la protection des renseignements personnels. Pour ce faire, nous allons réaliser une interface visuelle de sensibilisation sur les risques de cybersécurité de l’Internet des Objets. Notre travail portera donc sur deux tâches à réaliser : <br/><br/>
+     <strong>Tâche 1</strong> : Réaliser un catalogue qui résume les différents types d'objets connectés, et pour chacun d’eux, les vulnérabilités existantes ainsi que les menaces pour les données sensibles.<br/>
+     <strong>Tâche 2</strong> : Nous allons réaliser une interface de visualisation afin de sensibiliser les personnes qui utilisent ces objets connectés. Nous allons pour cela faire une page web qui énumère des objets connectés, l’utilisateur choisit celui qu’il veut utiliser en cliquant dessus, alors une description des cyberattaques possibles,  et des menaces probables s’affichera.<br/>          </CardText>
         </CardBody>
       </Card>
       <Card>
         <CardBody className="text-justify">
-          <CardTitle tag="h5">
-            II - Présentation de l'équipe projet
+          <CardTitle tag="h5" style={{margin:'10px'}}>
+            <strong>II - Présentation de l'équipe projet</strong><br/><br/>
           </CardTitle>
           <Table>
-            <thead>
+            <thead style={{backgroundColor:'#d1e2ff'}}>
               <tr>
                 <th>
                   Nom et prénom
